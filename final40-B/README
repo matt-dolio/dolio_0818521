@@ -1,0 +1,64 @@
+========================================================================
+    _    _     ____ _____ ____  ____      _      _____ ___ __  __ _____ 
+   / \  | |   / ___| ____| __ )|  _ \    / \    |_   _|_ _|  \/  | ____|
+  / _ \ | |  | |  _|  _| |  _ \| |_) |  / _ \     | |  | || |\/| |  _|  
+ / ___ \| |__| |_| | |___| |_) |  _ <  / ___ \    | |  | || |  | | |___ 
+/_/   \_\_____\____|_____|____/|_| \_\/_/   \_\   |_| |___|_|  |_|_____|
+                                                                        
+========================================================================
+
+You know what time it is? Everyone's favorite time! Algebra Time!
+
+For this assignment, you have a program that is going to test to see if two
+line segments intersect each other. I copied and pasted some code from Stack
+Overflow that seems to work.
+
+Basically, for this assignment, the user will type in two line segments, and
+the program returns true or false based on if the lines intersect or not. I
+added a cool graphing component that will help you visualize it, too.
+
+==========================================
+
+Sample Run #1 - Non intersecting lines:
+
+Reading in the first line. (0,0) is the top left of the screen, (9,9) the bottom right.
+Please enter x_min for the first line:
+3
+Please enter x_max for the first line:
+6
+Please enter y_min for the first line:
+0
+Please enter y_max for the first line:
+3
+Please enter x_min for the second line:
+0
+Please enter x_max for the second line:
+3
+Please enter y_min for the second line:
+5
+Please enter y_max for the second line:
+Do the lines intersect? Survey says: false
+
+==========================================
+
+Sample Run #2 - Intersecting lines
+
+Reading in the first line. (0,0) is the top left of the screen, (9,9) the bottom right.
+Please enter x_min for the first line:
+5
+Please enter x_max for the first line:
+5
+Please enter y_min for the first line:
+0
+Please enter y_max for the first line:
+8
+Please enter x_min for the second line:
+3
+Please enter x_max for the second line:
+7
+Please enter y_min for the second line:
+5
+Please enter y_max for the second line:
+5
+Do the lines intersect? Survey says: true
+

@@ -1,0 +1,38 @@
+============================================================
+  ____ _                ____                            _   
+ / ___| | __ _ _ __    / ___|___  _ __  _ __   ___  ___| |_ 
+| |   | |/ _` | '_ \  | |   / _ \| '_ \| '_ \ / _ \/ __| __|
+| |___| | (_| | |_) | | |__| (_) | | | | | | |  __/ (__| |_ 
+ \____|_|\__,_| .__/   \____\___/|_| |_|_| |_|\___|\___|\__|
+              |_|                                           
+
+============================================================
+
+Purpose: To teach you guys how 2D arrays work. You'll learn how to loop over
+them and search for five in a row horizontally, vertically, and diagonally.
+You'll also learn how to properly bounds check your code.
+
+Game: This is a 5-in-a-row game played on a 30x20 board. The user will enter a
+column (x location) and row (y location) to place an X at. Then either the
+second human player, or an AI (that you have to write) will place an O at an
+empty location. Play will alternate until you either win (5 in a row) or draw
+(the board is full). You can get 5 in a row horizontally, vertically, or
+diagonally (either forwards diagonal or backwards diagonally).
+
+.O..X
+..OX.
+..X..
+.X...
+X..O.
+
+Is a win for X, for example. This is a "back diagonal" win.
+
+Your objectives:
+1) Remove the static_assert from where the AI code is to go.
+2) Write an AI that will use rand() to pick a column and a row. If that spot
+is open, it will put a O there, otherwise it will try another random space.
+3) Write code to check for a draw (which happens if the array fills up)
+4) Bounds check each move to make sure it is inside the boundaries of the
+array
+5) Check for a win if there are 5 X's or O's in a row, horizontally,
+vertically, or diagonally.

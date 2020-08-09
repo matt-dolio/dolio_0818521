@@ -1,0 +1,63 @@
+==============================================
+    ___     _______ ____      _    ____ _____ 
+   / \ \   / / ____|  _ \    / \  / ___| ____|
+  / _ \ \ / /|  _| | |_) |  / _ \| |  _|  _|  
+ / ___ \ V / | |___|  _ <  / ___ \ |_| | |___ 
+/_/   \_\_/  |_____|_| \_\/_/   \_\____|_____|
+                                              
+  ____ ____      _    ____  _____ 
+ / ___|  _ \    / \  |  _ \| ____|
+| |  _| |_) |  / _ \ | | | |  _|  
+| |_| |  _ <  / ___ \| |_| | |___ 
+ \____|_| \_\/_/   \_\____/|_____|
+                                  
+==============================================
+
+For this assignment, you will input a series of numbers (using 0 to indicate
+when you're done). It will then output the sum of all of the numbers, and also
+their average (using the floating point average rather than integer average).
+
+Sample Runs:
+
+==============================================
+
+Please enter a number (current sum = 0), 0 to quit:
+1
+Please enter a number (current sum = 1), 0 to quit:
+2
+Please enter a number (current sum = 3), 0 to quit:
+3
+Please enter a number (current sum = 6), 0 to quit:
+4
+Please enter a number (current sum = 10), 0 to quit:
+0
+The sum was: 10
+The avg was: 2.5
+
+==============================================
+
+Please enter a number (current sum = 0), 0 to quit:
+-1
+Please enter a number (current sum = -1), 0 to quit:
+-10
+Please enter a number (current sum = -11), 0 to quit:
+100
+Please enter a number (current sum = 89), 0 to quit:
+30
+Please enter a number (current sum = 119), 0 to quit:
+6
+Please enter a number (current sum = 125), 0 to quit:
+3
+Please enter a number (current sum = 128), 0 to quit:
+0
+The sum was: 128
+The avg was: 21.3333
+
+==============================================
+
+Please enter a number (current sum = 0), 0 to quit:
+3
+Please enter a number (current sum = 3), 0 to quit:
+squirrel
+BAD INPUT!
+

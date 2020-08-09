@@ -1,0 +1,50 @@
+====================================================================
+ ____  _        _    ____ _  __   _   _    ____ _  __  _  _    ___  
+| __ )| |      / \  / ___| |/ /  | | / \  / ___| |/ / | || |  / _ \ 
+|  _ \| |     / _ \| |   | ' /_  | |/ _ \| |   | ' /  | || |_| | | |
+| |_) | |___ / ___ \ |___| . \ |_| / ___ \ |___| . \  |__   _| |_| |
+|____/|_____/_/   \_\____|_|\_\___/_/   \_\____|_|\_\    |_|  \___/ 
+                                                                    
+====================================================================
+
+For this assignment, you will be playing a variant of Blackjack where the
+player tries to get as close to 40 as possible without going over. The player
+starts with $100 and always $10 per hand. If they go over, they "go bust" and
+pay $10 to the dealer.
+
+Once they finish, the dealer will go, and will draw cards until they get a 36
+or higher. If the dealer goes over 40, the dealer goes bust and pays $10 to
+the player if they have not gone bust.
+
+If the dealer doesn't go bust, then the dealer's score is compared with the
+score of the player. If they player is higher than the dealer's, they gain
+$10, they lose $10 if they have less, and no money is exchanged on a tie.
+
+The value of a card is the face value (i.e. an 8 is worth 8 points, a
+jack/queen/king is worth 10) except for aces, which count either as 11 or 1,
+whichever is more advantageous for the player. I recommend when you start just
+always treating it as an 11 and worrying about handling this after doing
+everything else.
+
+Playing a game of Blackjack-40:
+
+1) The player is initially dealt four cards
+
+2) If they are dealt a 40, they print "BLACKJACK 40!" and they win $20.
+
+3) They can choose to hit or stay or quit. Hit means they are dealt another card.
+If they hit and go over 40, they go bust and pay $10 to the dealer. If they
+hit they can continue hitting until they bust or choose to stay or quit.
+Stay means they keep their total and the dealer gets to go.
+Quit means the game terminates.
+
+4) After the player is done, deal cards for the dealer until they get a 35
+or higher.
+
+5) Handle the money payments as described above. If the player wins they gain
+$10, if they lose they lose $10, if they tie no money is exchanged.
+
+6) If the player hits $200 they win the game, if they hit $0 they lose the
+game, and the game ends.
+
+7) Otherwise, go back up to #1 and do it again 

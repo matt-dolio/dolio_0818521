@@ -1,0 +1,80 @@
+// DOLIO and AVENDANO
+#include <iostream>
+#include <vector>
+#include <cmath>
+using namespace std;
+
+
+//Enum is useful when you want to make large numbers of mutually exclusive constants
+//This creates 5 constant integers, named EQUILATERAL (= 0), ISOCELES (= 1), etc.
+//It also creates a new integer type that can only hold a value from 0 to 4.
+enum triangle_t { EQUILATERAL, ISOCELES, RIGHT, OTHER, ERROR };
+
+/* This is equivalent, kinda, to:
+const int EQUILATERAL = 0;
+const int ISOCELES = 1;
+const int RIGHT = 2;
+const int OTHER = 3;
+const int ERROR = 4;
+*/
+
+
+triangle_t triangle_tester(double side1, double side2, double side3) {
+	
+	//YOU: Do your work right here
+	bool isNotTriangle = (side1 + side2 <= side3 || side1 + side3 <= side2 || side2 + side3 <= side1);
+	if (isNotTriangle) return ERROR;
+
+
+	vector<double> values = {side1, side2, side3};
+	double min = 9999999;
+	double max = 0;
+	double mid;
+
+	for (unsigned int i = 0; i < values.size(); i++) {
+
+		if (values[i] > max) {
+			max = values[i];
+		}
+
+		if (values[i] < min) {
+			min = values[i];
+		}
+
+	}
+
+	mid = (side1 + side2 + side3) - (max + min);
+
+
+	if (side1 == side2 and side2 == side3) {
+		return EQUILATERAL;
+	} else if ((min == mid or max == mid) and min < max) {
+		return ISOCELES;
+	} else if (max == sqrt(pow(min, 2) + pow(mid, 2))) {
+		return RIGHT;
+	} else return OTHER;
+
+}
+
+int main() {
+	double side1 = 0.0, side2 = 0.0, side3 = 0.0;
+	cin >> side1 >> side2 >> side3;
+
+	//YOU: Delete this next line...
+
+	triangle_t result = triangle_tester(side1, side2, side3);
+
+	if (result == EQUILATERAL)
+		cout << "equilateral";
+	else if (result == ISOCELES)
+		cout << "isoceles";
+	else if (result == RIGHT)
+		cout << "right";
+	else if (result == OTHER)
+		cout << "other";
+	else if (result == ERROR)
+		cout << "error";
+	else
+		cout << "This is unpossible!";
+	cout << endl;
+}

@@ -1,0 +1,30 @@
+=================================================
+  ____ _   _  ___  ____  ____    _  _____  _    
+ / ___| | | |/ _ \|  _ \|  _ \  / \|_   _|/ \   
+| |   | |_| | | | | |_) | | | |/ _ \ | | / _ \  
+| |___|  _  | |_| |  _ <| |_| / ___ \| |/ ___ \ 
+ \____|_| |_|\___/|_| \_\____/_/   \_\_/_/   \_\
+                                                
+=================================================
+
+Purpose: This program is designed to help users learn musical chords. As of
+right now, it only supports recognizing three chords: C major (made of up "C"
+"E" "G"), F major ("F" "A" "C") and G major ("G" "B" "D"). 
+
+The user will type in three strings and if those strings appear in any order
+(chord inversions if you are a music person) the program will output what
+chord it is. If it's not one of the three chords we recognize so far, output
+"Unknown".
+
+Example 1: if they type in "C E G" it will print "C Major"
+Example 2: if they type in "A C F" it will print "F Major"
+Example 3: if they type in "G B D" it will print "G Major"
+Example 4: if they type in "A B C" it will print "Unknown"
+
+The code should also do some basic error checking. All notes must be "A"
+through "G". If they type in a word other than "A" through "G" call the die()
+function. If they type in less than three notes, also call die, which prints
+"BAD INPUT!" and quits.
+
+Example 5: if they type in "Foo Bar" it will print "BAD INPUT!"
+Example 6: if they type in "C E H" it will print "BAD INPUT!"

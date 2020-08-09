@@ -1,0 +1,60 @@
+****************************************
+         SICK GAINS, The Code
+****************************************
+
+This assignment is in honor of one of my first students who 
+was a weightlifter. He wrote something similar after taking
+CSCI 40, so he could track his sick gains.
+
+For this assignment, you will track how much you can lift
+in the squat and the chest fly.
+
+Basically, you will enter a series of numbers corresponding to 
+how much weight you lift each week, ending with a 0. The 0 doesn't
+get added to the vector.
+
+The program will then calculate two numbers for each series:
+1) How much you can lift now compared with the baseline
+2) How much less you can lift now compared with your max lift
+
+The baseline is hardcoded into the program, and is set at:
+100 kilos for the squat
+10 kilos for the chest fly
+
+If the user ever enters a negative lift, the program should quit with:
+Do you even lift, bro?
+
+Correct behavior is as follows:
+
+----------------------------------------
+
+Example #1: The user is up 200 from baseline, but down 100 from the max
+on squats, and is down from both the baseline and max on chest fly.
+
+Please enter your squats (one per line, 0 to quit):
+200
+300
+400
+300
+0
+Your gains in squats: 200
+Your losses in squats: -100
+Please enter your chest fly (one per line, 0 to quit):
+20
+30
+10
+1
+0
+Your gains in chest fly: -9
+Your losses in chest fly: -29
+
+----------------------------------------
+
+Example #2: Bad input
+
+Please enter your squats (one per line, 0 to quit):
+10
+30000
+-100
+Do you even lift, bro?
+

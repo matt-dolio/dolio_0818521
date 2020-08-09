@@ -1,0 +1,19 @@
+Connect Fivish!
+
+In this game you will write a more generalized version of tic-tac-toe.
+
+For an A you will need to:
+
+1) Have a working 5x5 game of tic-tac-toe, in which two players take turns
+entering Xs and Os.
+2) Don't allow moves into spots that have been taken already.
+3) You should be able to change a single number in your code and make the
+board larger or smaller. I.e. NO MAGIC NUMBERS.
+4) Will detect a winning board position (5 in a row all of one symbol)
+5) Will detect when there is a draw (board full).
+
+Each point you miss above is -1 to your grade.
+
+Writing an AI is worth +1 point
+6) You can have an AI play with you instead if you have no friends.
+7) Make printing the board prettier with rows and column numbers

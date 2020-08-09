@@ -1,0 +1,50 @@
+===================
+ _____ _   _ _   _ 
+|  ___| | | | \ | |
+| |_  | | | |  \| |
+|  _| | |_| | |\  |
+|_|    \___/|_| \_|
+
+===================
+                   
+This program is called "Fun" since computer science is fun.
+
+Also because it's a function.
+
+It is a very simple program. The user inputs x, and the code is supposed to
+output the square root of the absolute value of x, times 1.5. I.e.: f(x) = 3*(sqrt(abs(x)) / 2)
+
+It will print the returned value with 2 significant digits.
+
+Sample runs:
+Please enter a double:
+9
+f(x) = 4.50
+
+Please enter a double:
+25
+f(x) = 7.50
+
+Please enter a double:
+1
+f(x) = 1.50
+
+Please enter a double:
+2
+f(x) = 2.12
+
+Please enter a double:
+3
+f(x) = 2.60
+
+Please enter a double:
+5
+f(x) = 3.35
+
+Please enter a double:
+0
+f(x) = 0.00
+
+Please enter a double:
+-100
+f(x) = 15.00

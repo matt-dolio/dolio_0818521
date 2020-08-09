@@ -1,0 +1,58 @@
+====================================================
+__   __ _    _   _ _____ __________ _____     _____ 
+\ \ / // \  | | | |_   _|__  / ____| ____|   |___ / 
+ \ V // _ \ | |_| | | |   / /|  _| |  _| _____ |_ \ 
+  | |/ ___ \|  _  | | |  / /_| |___| |__|_____|__) |
+  |_/_/   \_\_| |_| |_| /____|_____|_____|   |____/ 
+                                                    
+====================================================
+
+This program simulates a simple game called Yahtzee-3. The program will roll
+three six-sided dice. If the three match, then it prints YAHTZEE and the user
+wins 50 points. If they aren't all the same, then the user scores whatever the
+total of the three dice are. The game ends once the user collects 100 points.
+
+The user can choose a different random seed each time to get difference dice
+rolls.
+
+Sample run:
+Please enter a random seed:
+0
+Roll # 0: 2,5,4
+You win: 11 points.
+Roll # 1: 2,6,2
+You win: 10 points.
+Roll # 2: 5,1,4
+You win: 10 points.
+Roll # 3: 2,3,2
+You win: 7 points.
+Roll # 4: 3,2,6
+You win: 11 points.
+Roll # 5: 5,1,1
+You win: 7 points.
+Roll # 6: 5,5,6
+You win: 16 points.
+Roll # 7: 3,4,4
+You win: 11 points.
+Roll # 8: 3,3,3
+YAHTZEE! 50 points!
+
+Please enter a random seed:
+3
+Roll # 0: 1,2,1
+You win: 4 points.
+Roll # 1: 1,4,5
+You win: 10 points.
+Roll # 2: 1,5,2
+You win: 8 points.
+Roll # 3: 5,5,5
+YAHTZEE! 50 points!
+Roll # 4: 4,2,5
+You win: 11 points.
+Roll # 5: 4,1,2
+You win: 7 points.
+Roll # 6: 2,4,2
+You win: 8 points.
+Roll # 7: 1,5,1
+You win: 7 points.
+

@@ -1,0 +1,21 @@
+This assignment is quite simple. The program prompts the user for the radius
+of a circle, and it outputs the area of the circle.
+
+The equation for the area of a circle is pi*r^2.
+
+It will check to see if the radius is less than or equal to 0, and if so print
+out an error instead. It will also print out an error if they type in a
+non-floating point number.
+
+Example 1: Please enter the radius of a circle: 1 The area of a circle of that
+radius is: 3.14159
+
+Example 2: Please enter the radius of a circle: 0 You typed in a bad radius!
+
+Example 3: Please enter the radius of a circle: 7.12 The area of a circle of
+that radius is: 159.261
+
+Example 4: Please enter the radius of a circle: a You typed in a bad radius!
+
+Hint: M_PI is defined ccmath
+

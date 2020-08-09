@@ -1,0 +1,2 @@
+// helloworldfunction
+std::string HelloWorld() { return "Hello world!"; }
